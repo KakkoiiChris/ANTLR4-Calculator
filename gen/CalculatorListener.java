@@ -27,6 +27,16 @@ public interface CalculatorListener extends ParseTreeListener {
 	 */
 	void exitAssign(CalculatorParser.AssignContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link CalculatorParser#exponent}.
+	 * @param ctx the parse tree
+	 */
+	void enterExponent(CalculatorParser.ExponentContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CalculatorParser#exponent}.
+	 * @param ctx the parse tree
+	 */
+	void exitExponent(CalculatorParser.ExponentContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link CalculatorParser#multiplicative}.
 	 * @param ctx the parse tree
 	 */

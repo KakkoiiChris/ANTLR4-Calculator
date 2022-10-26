@@ -22,6 +22,12 @@ public interface CalculatorVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitAssign(CalculatorParser.AssignContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link CalculatorParser#exponent}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExponent(CalculatorParser.ExponentContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link CalculatorParser#multiplicative}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
